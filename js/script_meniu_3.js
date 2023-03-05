@@ -80,3 +80,17 @@
 		document.getElementById('p_scrolabil_id').innerHTML='Picioarele sunt o parte esențială a corpului uman, oferind sprijin, echilibru și mobilitate. Sunt formate din coapsă, genunchi, gambe, glezne și picior și sunt atașate de pelvis.Coapsa este porțiunea superioară a piciorului și conține femurul, cel mai lung os din corp. Articulația genunchiului conectează coapsa de piciorul inferior și este crucială pentru mișcare și stabilitate. Partea inferioară a piciorului conține două oase, tibia și fibula și se conectează la articulația gleznei. Piciorul este compus din gleznă, călcâi, talpă și degete și este esențial pentru a sta în picioare, a merge și a alerga.Mușchii picioarelor, inclusiv cvadricepsul, ischio-jambierii și mușchii gambei, sunt responsabili pentru mișcare și sprijin. Cvadricepsul ne permite să ne îndreptăm picioarele, în timp ce ischiobigiolarele ne permit să le îndoim. Mușchii gambei sunt esențiali pentru mers și alergare și lucrează pentru a ridica călcâiul de pe sol.În general, picioarele sunt esențiale pentru activitățile zilnice și interacțiunile cu lumea din jurul nostru, iar orice deteriorare sau vătămare a acestui sistem complex poate avea consecințe grave asupra mobilității și funcționalității noastre generale.';
 		document.getElementById('p_scrolabil_id').scrollTop=-500000;
 	});
+
+window.addEventListener("orientationchange", function() {
+  if (window.orientation === 0 || window.orientation === 180) {
+    console.log("userul a schimbat orientarea in portret");
+	document.getElementById('aside').style.display = "none";
+  }
+});
+
+window.addEventListener("orientationchange", function() {
+  if (window.orientation === 90 || window.orientation === -90) {
+    console.log("userul a schimbat orientarea in portret");
+	document.getElementById('aside').style.display = "block";
+  }
+});
