@@ -2,6 +2,7 @@ const corpul = document.getElementById("corpul");
 	corpul.addEventListener("click", function() 
 	{
 		console.log("corpul was clicked");
+		parti_on_off = 0;
 		if (('ontouchstart' in window || navigator.maxTouchPoints)&&screen.width < 600) 
 		{
 			console.log("This is a mobile device");
@@ -27,6 +28,7 @@ const corpul = document.getElementById("corpul");
 	partile.addEventListener("click", function() 
 	{
 		console.log("partile was clicked");
+		parti_on_off = 1;
 		document.getElementById('meniu_poza').style.display = "none";
 		document.getElementById('stil').href = "css/parti.css";
 		document.getElementById('p_scrolabil_id').scrollTop=-50000;
@@ -46,6 +48,7 @@ const corpul = document.getElementById("corpul");
 	capul.addEventListener("click", function() 
 	{
 		console.log("capul was clicked");
+		parti_on_off = 0;
 		if (('ontouchstart' in window || navigator.maxTouchPoints)&&screen.width < 600) 
 		{
 			console.log("This is a mobile device");
@@ -70,6 +73,7 @@ const corpul = document.getElementById("corpul");
 	trunchiul.addEventListener("click", function() 
 	{
 		console.log("trunchiul was clicked");
+		parti_on_off = 0;
 		if (('ontouchstart' in window || navigator.maxTouchPoints)&&screen.width < 600) 
 		{
 			console.log("This is a mobile device");
@@ -94,6 +98,7 @@ const corpul = document.getElementById("corpul");
 	bratele.addEventListener("click", function() 
 	{
 		console.log("bratele was clicked");
+		parti_on_off = 0;
 		if (('ontouchstart' in window || navigator.maxTouchPoints)&&screen.width < 600) 
 		{
 			console.log("This is a mobile device");
@@ -118,6 +123,7 @@ const corpul = document.getElementById("corpul");
 	picioarele.addEventListener("click", function() 
 	{
 		console.log("picioarele was clicked");
+		parti_on_off = 0;
 		if (('ontouchstart' in window || navigator.maxTouchPoints)&&screen.width < 600) 
 		{
 			console.log("This is a mobile device");
