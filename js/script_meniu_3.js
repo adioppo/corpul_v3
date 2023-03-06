@@ -1,8 +1,10 @@
 /*
 	const corpul_2 = document.getElementById("corpul_2");
+	var parti_on_off = 0;
 	corpul_2.addEventListener("click", function() 
 	{
 		console.log("corpul_2 was clicked");
+		parti_on_off = 0;
 		document.getElementById('stil').href = "css/header.css";
 		document.getElementById('p_scrolabil_id').style.display = "block";
 		document.getElementById('aside').style.display = "none";
@@ -16,6 +18,7 @@
 	partile_2.addEventListener("click", function() 
 	{
 		console.log("partile_2 was clicked");
+		parti_on_off = 1;
 		document.getElementById('stil').href = "css/parti.css";
 		document.getElementById('p_scrolabil_id').style.display = "none";
 		document.getElementById('aside').style.display = "block";
@@ -30,7 +33,8 @@
 	const capul_2 = document.getElementById("capul_2");
 	capul_2.addEventListener("click", function() 
 	{
-		console.log("capul_2 was clicked");		
+		console.log("capul_2 was clicked");
+		parti_on_off = 0;
 		document.getElementById('stil').href = "css/header.css";
 		document.getElementById('p_scrolabil_id').style.display = "block";
 		document.getElementById('aside').style.display = "none";
@@ -45,6 +49,7 @@
 	trunchiul_2.addEventListener("click", function() 
 	{
 		console.log("trunchiul_2 was clicked");
+		parti_on_off = 0;
 		document.getElementById('stil').href = "css/header.css";
 		document.getElementById('p_scrolabil_id').style.display = "block";
 		document.getElementById('aside').style.display = "none";
@@ -58,6 +63,7 @@
 	bratele_2.addEventListener("click", function() 
 	{
 		console.log("bratele_2 was clicked");
+		parti_on_off = 0;
 		document.getElementById('stil').href = "css/header.css";
 		document.getElementById('p_scrolabil_id').style.display = "block";
 		document.getElementById('aside').style.display = "none";
@@ -71,6 +77,7 @@
 	picioarele_2.addEventListener("click", function() 
 	{
 		console.log("picioarele_2 was clicked");
+		parti_on_off = 0;
 		document.getElementById('stil').href = "css/header.css";
 		document.getElementById('p_scrolabil_id').style.display = "block";
 		document.getElementById('aside').style.display = "none";
@@ -84,7 +91,14 @@
 window.addEventListener("orientationchange", function() {
   if (window.orientation === 0 || window.orientation === 180) {
    //alert("userul a schimbat orientarea in portret");
-	document.getElementById('aside').style.display = "block";
+	  if (parti_on_off == 0)
+	  {
+	   document.getElementById('aside').style.display = "none";
+	  }
+	  else
+	  {
+	   document.getElementById('aside').style.display = "block";
+	  }
 	document.getElementById('meniu_poza').style.display = "none";
   }
 });
@@ -95,7 +109,14 @@ window.addEventListener("orientationchange", function() {
   if (window.orientation === 90 || window.orientation === -90) {
     //alert("userul a schimbat orientarea in Landscape");
 	
-	document.getElementById('aside').style.display = "none";
+	if (parti_on_off == 0)
+	  {
+	   document.getElementById('aside').style.display = "none";
+	  }
+	  else
+	  {
+	   document.getElementById('aside').style.display = "block";
+	  }
 	document.getElementById('meniu_poza').style.display = "block";
   }
 });
