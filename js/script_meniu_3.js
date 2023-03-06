@@ -88,15 +88,18 @@
 		document.getElementById('p_scrolabil_id').scrollTop=-500000;
 	});
 
+//portrait
 window.addEventListener("orientationchange", function() {
   if (window.orientation === 0 || window.orientation === 180) {
    //alert("userul a schimbat orientarea in portret");
-	  if (parti_on_off == 0)
+	  if (parti_on_off === 0)
 	  {
+		  alert(parti_on_off);
 	   document.getElementById('aside').style.display = "none";
 	  }
 	  else
 	  {
+		  alert(parti_on_off);
 	   document.getElementById('aside').style.display = "block";
 	  }
 	document.getElementById('meniu_poza').style.display = "none";
@@ -104,17 +107,19 @@ window.addEventListener("orientationchange", function() {
 });
 
 
-
+//landscape
 window.addEventListener("orientationchange", function() {
   if (window.orientation === 90 || window.orientation === -90) {
     //alert("userul a schimbat orientarea in Landscape");
 	
 	if (parti_on_off == 0)
 	  {
+		  alert(parti_on_off);
 	   document.getElementById('aside').style.display = "none";
 	  }
 	  else
 	  {
+		  alert(parti_on_off);
 	   document.getElementById('aside').style.display = "block";
 	  }
 	document.getElementById('meniu_poza').style.display = "block";
