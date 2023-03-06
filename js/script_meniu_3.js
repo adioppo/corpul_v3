@@ -84,7 +84,7 @@
 window.addEventListener("orientationchange", function() {
   if (window.orientation === 0 || window.orientation === 180) {
    //alert("userul a schimbat orientarea in portret");
-	//document.getElementById('aside').style.display = "block";
+	document.getElementById('aside').style.display = "block";
 	document.getElementById('meniu_poza').style.display = "none";
   }
 });
@@ -95,7 +95,7 @@ window.addEventListener("orientationchange", function() {
   if (window.orientation === 90 || window.orientation === -90) {
     //alert("userul a schimbat orientarea in Landscape");
 	
-	//document.getElementById('aside').style.display = "none";
+	document.getElementById('aside').style.display = "none";
 	document.getElementById('meniu_poza').style.display = "block";
   }
 });
