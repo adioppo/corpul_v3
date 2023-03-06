@@ -244,12 +244,12 @@ window.addEventListener("orientationchange", function() {
    //alert("userul a schimbat orientarea in portret");
 	  if (parti_on_off === 0)
 	  {
-		  alert(parti_on_off);
+		  //alert(parti_on_off);
 	   document.getElementById('aside').style.display = "none";
 	  }
 	  else
 	  {
-		  alert(parti_on_off);
+		  //alert(parti_on_off);
 	   document.getElementById('aside').style.display = "block";
 	  }
 	document.getElementById('meniu_poza').style.display = "none";
@@ -264,12 +264,12 @@ window.addEventListener("orientationchange", function() {
 	
 	if (parti_on_off == 0)
 	  {
-		  alert(parti_on_off);
+		  //alert(parti_on_off);
 	   document.getElementById('aside').style.display = "none";
 	  }
 	  else
 	  {
-		  alert(parti_on_off);
+		  //alert(parti_on_off);
 	   document.getElementById('aside').style.display = "block";
 	  }
 	document.getElementById('meniu_poza').style.display = "block";
